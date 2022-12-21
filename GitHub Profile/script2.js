@@ -26,6 +26,7 @@ function submit(event) {
     event.preventDefault();
     let formSearch = document.querySelector("#search-text");
     searchGithubUsers(formSearch.value);
+    formSearch.value='';
   }
 
 let form = document.querySelector("#search-form");
@@ -51,10 +52,10 @@ form.addEventListener("submit", submit);
 // }
 
 
-// // function searchGithubUsers(user) {
-// //     let apiUrl = `https://api.github.com/users/${user}`;
-// //     console.log(apiUrl);
-// //     axios.get(apiUrl).then(gitsRepo);
+//  function searchGithubUsers(user) {
+//      let apiUrl = `https://api.github.com/users/${user}`;
+//      console.log(apiUrl);
+//      axios.get(apiUrl).then(gitsRepo);
 // }
 
 searchGithubUsers("DianaB177");
