@@ -25,7 +25,7 @@ function infoGithub(response) {
 function submit(event) {
     event.preventDefault();
     let formSearch = document.querySelector("#search-text");
-    searchInfo(formSearch.value);
+    searchGithubUsers(formSearch.value);
   }
 
 let form = document.querySelector("#search-form");
@@ -56,4 +56,5 @@ form.addEventListener("submit", submit);
 // //     console.log(apiUrl);
 // //     axios.get(apiUrl).then(gitsRepo);
 // }
+
 searchGithubUsers("DianaB177");

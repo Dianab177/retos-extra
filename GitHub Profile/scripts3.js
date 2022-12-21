@@ -12,8 +12,7 @@ function gitUserInfo(response) {
         <div class="col-2 ">
         <div class="date-forecast">${formatDaysForecast(forecastDaily.dt)}</div>
         <img src="http://openweathermap.org/img/wn/${
-          forecastDaily.weather[0].icon
-        }@2x.png"
+          forecastDaily.weather[0].icon}@2x.png"
          alt=""
          width="36"/>
         <div class="degrees-forecast">
