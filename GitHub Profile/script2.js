@@ -32,29 +32,28 @@ let form = document.querySelector("#search-form");
 form.addEventListener("submit", submit);
 
 
-function gitsRepo(response) {
-   let repositorioGits = response.data.public_gists;
+// function gitsRepo(response) {
+//    let repositorioGits = response.data.public_gists;
 
-   let repoGitsDisplay = document.getElementById("gitsRepo");
+//    let repoGitsDisplay = document.getElementById("gitsRepo");
 
-   let gitsRepoHtml = `<div class="card-body text-center">`;
-   repositorioGits.forEach(function (reposGits, index) {
-    if (index < 5) {
-        gitsRepoHtml = 
-        gitsRepoHtml +
-        `<a href="${gitsRepo(reposGits.dt)}" class="card-link">Card link</a>`
+//    let gitsRepoHtml = `<div class="card-body text-center">`;
+//    repositorioGits.forEach(function (reposGits, index) {
+//     if (index < 5) {
+//         gitsRepoHtml = 
+//         gitsRepoHtml +
+//         `<a href="${gitsRepo(reposGits.dt)}" class="card-link">Card link</a>`
 
-}
-});
-gitsRepoHtml = gitsRepoHtml + `</div>`;
-repoGitsDisplay.innerHTML = gitsRepoHtml;
-}
+// }
+// });
+// gitsRepoHtml = gitsRepoHtml + `</div>`;
+// repoGitsDisplay.innerHTML = gitsRepoHtml;
+// }
 
 
- function searchGithubUsers(user) {
-   let apiUrl = `https://api.github.com/users/${user}`;
-   console.log(apiUrl);
-   axios.get(apiUrl).then(gitsRepo);
-}
-
+// // function searchGithubUsers(user) {
+// //     let apiUrl = `https://api.github.com/users/${user}`;
+// //     console.log(apiUrl);
+// //     axios.get(apiUrl).then(gitsRepo);
+// }
 searchGithubUsers("DianaB177");
