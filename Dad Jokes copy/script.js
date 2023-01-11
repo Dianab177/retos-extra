@@ -16,7 +16,7 @@ async function generateJoke() {
     config
   );
   const data = await res.json();
-  jokeEl.innerHTML = `<div><img src='${data.countryInfo.flag} alt='avatar'/><div>`;
+  jokeEl.innerHTML = `<div><img src='${data.countryInfo.flag}' alt='avatar'/><div>`;
 }
 generateJoke();
 
