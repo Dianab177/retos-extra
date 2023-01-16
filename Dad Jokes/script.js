@@ -1,15 +1,15 @@
-const jokeEl = document.getElementById('joke');
-const jokeBtn = document.getElementById('jokeBtn');
+const jokeEl = document.getElementById("joke");
+const jokeBtn = document.getElementById("jokeBtn");
 
-jokeBtn.addEventListener('click', generateJoke);
+jokeBtn.addEventListener("click", generateJoke);
 
 // USING ASYNC/AWAIT
 async function generateJoke() {
   const config = {
     headers: {
-      Accept: 'application/json',
+      Accept: "application/json",
     },
-  }
+  };
 
   const res = await fetch('https://disease.sh/v3/covid-19/all', config);
   const data = await res.json();
